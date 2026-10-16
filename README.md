@@ -53,6 +53,3 @@ Exploration, analyse et nettoyage des données du jeu Kaggle
    ```
    Les données nettoyées et les graphiques sont écrits dans `outputs/`. L'option `--no-plots` désactive les graphiques.
 
-## Auteur
-
-[Ton nom] — [Formation, ex. M2 …], [année universitaire]
