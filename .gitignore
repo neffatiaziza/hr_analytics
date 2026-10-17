@@ -1,0 +1,20 @@
+# Données brutes (à télécharger depuis Kaggle, voir README)
+archive/
+archive.zip
+data/
+
+# Données nettoyées générées par le script (se recréent en relançant le script)
+outputs/*.csv
+
+# Fichiers Python et Jupyter temporaires
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environnements virtuels
+venv/
+.venv/
+
+# Fichiers système
+.DS_Store
+Thumbs.db

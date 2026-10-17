@@ -9,7 +9,7 @@ Exploration, analyse et nettoyage des données du jeu Kaggle
 
 | Fichier | Description |
 |---|---|
-| `hr_job_change_EDA_nettoyage.ipynb` | Notebook commenté : exploration, analyses statistiques, nettoyage et interprétations |
+| `hr_cleaning.ipynb` | Notebook commenté : exploration, analyses statistiques, nettoyage et interprétations |
 | `hr_cleaning_pipeline.py` | Script Python reprenant tout le notebook, découpé en fonctions |
 | `requirements.txt` | Bibliothèques nécessaires |
 | `outputs/figures/` | Graphiques générés par le script |
@@ -41,15 +41,9 @@ Exploration, analyse et nettoyage des données du jeu Kaggle
    ```bash
    pip install -r requirements.txt
    ```
-2. Télécharger les données depuis [Kaggle](https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists) et placer les 3 fichiers CSV dans un dossier `data/` :
-   ```
-   data/aug_train.csv
-   data/aug_test.csv
-   data/sample_submission.csv
-   ```
+2. Télécharger les données depuis [Kaggle](https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists) (bouton **Download**, fichier `archive.zip`), puis extraire l'archive dans un dossier `archive/`, à côté du script.
 3. Lancer le script :
    ```bash
-   python hr_cleaning_pipeline.py --data-dir data --out-dir outputs
+   python hr_cleaning_pipeline.py --data-dir archive --out-dir outputs
    ```
    Les données nettoyées et les graphiques sont écrits dans `outputs/`. L'option `--no-plots` désactive les graphiques.
-
